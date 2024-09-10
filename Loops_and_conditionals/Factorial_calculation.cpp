@@ -12,5 +12,19 @@ Practice: Loops (multiplying values in the factorial) and conditionals (checking
 int main()
 {
 
+    int userN, factorialN = 1;
+
+    std::cout << "Give a number: ";
+    std::cin >> userN;
+
+    for(int i = userN; i > 1; i--)
+    {
+        factorialN *= i;
+    }
+
+    std::cout << "Factorial of number " << userN << ": " << factorialN << std::endl;
+
+
+
     return 0;
 }
