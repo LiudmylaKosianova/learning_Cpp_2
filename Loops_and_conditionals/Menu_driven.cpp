@@ -14,7 +14,12 @@ and basic arithmetic operations.
 
 int main()
 {
-    
+    std::cout << "\t\t\t======= Menu =======\n";
+    std::cout << "\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Exit\n\n";
+
+    int operation = 0, userN1, userN2;
+    std::cout << "Operation to be performed: ";
+    std::cin >> operation;
 
     return 0;
 }
