@@ -12,8 +12,16 @@ Practice: Loops (e.g., for, while) and conditionals (if, else if, else).
 
 int main(){
 
-    for(int i = 1; i < 101; i++){
-        std::cout << i << std::endl;
+    for(int i = 1; i < 101; i++)
+    {
+        if(i%3 == 0 && i%5 != 0)
+        {
+            std::cout << "Fizz\n";
+        }         
+        else
+        {        
+            std::cout << i << std::endl;
+        }
     }
 
 
