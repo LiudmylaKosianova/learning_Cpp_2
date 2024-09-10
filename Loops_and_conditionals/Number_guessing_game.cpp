@@ -9,12 +9,15 @@ Practice: Loops (for user input), conditionals (for comparison and feedback), an
 */
 
 #include <iostream>
+#include <time.h>
+#include <stdlib.h>
 
 int main()
 {
 
-    int secret_number, guess_attempt;
-    secret_number = 7;
+    int secret_number, guess_attempt = 0;
+    srand(time(NULL));
+    secret_number = rand() % 100 + 1;
 
     while (secret_number != guess_attempt)
     {
