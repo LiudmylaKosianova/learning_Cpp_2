@@ -13,5 +13,24 @@ Practice: Loops (for user input), conditionals (for comparison and feedback), an
 int main()
 {
 
+    int secret_number, guess_attempt;
+    secret_number = 7;
+
+    while (secret_number != guess_attempt)
+    {
+        std::cout << "\nYour guess: ";
+        std::cin >> guess_attempt;
+
+        if(guess_attempt < secret_number)
+        {
+            std::cout << "...too low\n";
+        }
+        else if (guess_attempt > secret_number)
+        {
+            std::cout << "...too high\n";
+        }
+    }
+
+
     return 0;
 }
