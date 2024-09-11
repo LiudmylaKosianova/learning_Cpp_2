@@ -13,14 +13,13 @@ Practice: Defining and calling functions, passing arguments, and returning value
 */
 
 float CelsToFahr(float cels)
-{
-    
-    return (cels * (9/5)) + 32;
+{    
+    return (cels * (9.0/5.0)) + 32;
 }
 
 float FahrToCels(float fahr)
 {
-    return (fahr - 32) * (5/9);
+    return (fahr - 32) * (5.0/9.0);
 }
 
 int AskUserOperation()
@@ -34,10 +33,10 @@ int AskUserOperation()
     return operation;    
 }
 
-int AskUserNumber()
+float AskUserTemp()
 {
-    int userN = 0; 
-    std::cout << "Enter your number: ";
+    float userN = 0; 
+    std::cout << "Enter the temperature: ";
     std::cin >> userN;
     return userN;
 }
