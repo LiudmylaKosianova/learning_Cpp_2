@@ -124,3 +124,26 @@ int FactorialRe(int number)
     else
     return number * FactorialRe(number-1);
 }
+
+/*
+Simple Calculator with Functions
+
+Task: Write a program that implements basic arithmetic operations 
+(addition, subtraction, multiplication, division) using separate functions for each operation. 
+The program should take two numbers and an operator (+, -, *, /) from the user, 
+then call the corresponding function to compute the result.
+
+Practice: Creating multiple functions, passing arguments to functions, and returning results.
+*/
+
+int A(int a, int b)
+{return a + b;}
+
+int S(int a, int b)
+{return a - b;}
+
+int M(int a, int b)
+{return a*b;}
+
+int D(int a, int b)
+{return a/b;}
