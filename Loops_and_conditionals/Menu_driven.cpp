@@ -14,12 +14,29 @@ and basic arithmetic operations.
 
 int main()
 {
-    std::cout << "\t\t\t======= Menu =======\n";
-    std::cout << "\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Exit\n\n";
+    
 
-    int operation = 0, userN1, userN2;
-    std::cout << "Operation to be performed: ";
-    std::cin >> operation;
+    int operation = 0, userN1, userN2, result;
+    
+
+    do
+    {
+        std::cout << "\t\t\t======= Menu =======\n";
+        std::cout << "\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Exit\n\n";
+        std::cout << "Operation to be performed: ";
+        std::cin >> operation;
+        std::cout << "First number: ";
+        std::cin >> userN1;
+        std::cout << "Second number: ";
+        std::cin >> userN2;
+
+        switch(operation)
+        {
+            case 1:
+
+        }
+    } while (operation != 5);
+    
 
     return 0;
 }
