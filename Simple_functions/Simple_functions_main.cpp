@@ -27,6 +27,7 @@ int main()
 
     int input[3];
     UserNumbers(input);
+    MaxMin(input[0], input[1], input[2]);
 
 
     return 0;

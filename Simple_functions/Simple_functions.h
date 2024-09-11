@@ -59,6 +59,31 @@ void UserNumbers(int* a)
     std::cout << "Second integer: ";
     std::cin >> a[1];
     std::cout << "Third integer: ";
-    std::cin >> a[2];   
+    std::cin >> a[2]; 
 
+}
+
+void MaxMin(int a, int b, int c)
+{
+     
+    int max, min;
+    if(a > b)
+    {
+        max = a;
+        min = b;
+    }
+    else
+    {
+        max = b;
+        min = a;
+    }
+    if(c > max){max = c;}
+    if(c < min){min = c;}
+
+    std::cout << "Your integers: " << a << ", " 
+            << b << ", " 
+            << c << std::endl;
+    std::cout << "Minimun: " << min << std::endl;
+    std::cout << "Maximum: " << max << std::endl;
+     
 }
