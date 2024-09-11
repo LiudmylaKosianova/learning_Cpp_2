@@ -12,14 +12,15 @@ a temperature and select which conversion they want to perform.
 Practice: Defining and calling functions, passing arguments, and returning values.
 */
 
-int CelsToFahr(int cels)
+float CelsToFahr(float cels)
 {
-    return 0;
+    
+    return (cels * (9/5)) + 32;
 }
 
-int FahrToCels(int fahr)
+float FahrToCels(float fahr)
 {
-    return 0;
+    return (fahr - 32) * (5/9);
 }
 
 int AskUserOperation()
