@@ -33,7 +33,14 @@ int main()
     int* start = a;
     int* end = a + 4;
 
-    
+    ArrReversal(start, end);
+
+    for(int i = 0; i < 5; i++)
+    {
+        std::cout << *(a + i) << " ";
+    }
+
+
 
     return 0;
 }
