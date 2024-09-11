@@ -23,11 +23,19 @@ int main()
     //     break;        
     // }
 
-    //Find Maximum and Minimun
+    // //Find Maximum and Minimun
 
-    int input[3];
-    UserNumbers(input);
-    MaxMin(input[0], input[1], input[2]);
+    // int input[3];
+    // UserNumbers(input);
+    // MaxMin(input[0], input[1], input[2]);
+
+    int number;
+    std::cout << "Enter your number: ";
+    std::cin >> number;
+    if(isPrime(number))
+    std::cout << "Your number is prime\n";
+    else
+    std::cout << "Your number is not prime\n";
 
 
     return 0;

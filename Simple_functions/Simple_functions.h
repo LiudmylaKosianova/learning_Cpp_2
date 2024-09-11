@@ -87,3 +87,23 @@ void MaxMin(int a, int b, int c)
     std::cout << "Maximum: " << max << std::endl;
      
 }
+
+/*
+Prime Number Checker
+
+Task: Write a function isPrime(int num) that returns true if the number is prime and false otherwise. 
+Use this function in a program that asks the user to input a number and tells them if it's a prime number or not.
+
+Practice: Function returns, conditionals, and loops inside a function.
+*/
+
+bool isPrime(int num)
+{
+    if(num >= 1 && num <= 3) return true;
+    for(int i = num-1; i > 1; i--)
+    {
+        if(num % i == 0) return false;
+    }
+    
+    return true;
+}
