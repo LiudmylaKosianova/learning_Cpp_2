@@ -40,3 +40,25 @@ float AskUserTemp()
     std::cin >> userN;
     return userN;
 }
+
+/*
+Find Maximum and Minimum
+
+Task: Write a function that takes three integers as parameters 
+and returns the maximum and minimum of those numbers. 
+Use this function in a program that asks the user for three numbers and prints the maximum and minimum.
+
+Practice: Function parameters, return values, and conditional statements inside functions.
+*/
+
+void UserNumbers(int* a)
+{
+    
+    std::cout << "Enter 3 integers.\nFirst integer: ";
+    std::cin >> a[0];
+    std::cout << "Second integer: ";
+    std::cin >> a[1];
+    std::cout << "Third integer: ";
+    std::cin >> a[2];   
+
+}
