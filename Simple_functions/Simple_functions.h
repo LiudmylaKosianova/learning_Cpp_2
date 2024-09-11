@@ -147,3 +147,42 @@ int M(int a, int b)
 
 int D(int a, int b)
 {return a/b;}
+
+void SimpleCalculator()
+{
+    char operation;
+    int a, b, result;
+    std::cout << "What do you want to calculate? \n";
+    std::cin >> a;
+    std::cin >> operation;
+    std::cin >> b;
+
+    
+    switch(int(operation))
+    {
+        case 43:
+        result = A(a, b);
+        std::cout << "="<< result << std::endl; 
+        break;
+        case 45:
+        result = S(a, b);
+        std::cout << "="<< result << std::endl; 
+        break;
+        case 42:
+        result = M(a, b);
+        std::cout << "="<< result << std::endl; 
+        break;
+        case 47:
+        result = D(a, b);
+        std::cout << "="<< result << std::endl; 
+        break;
+        default:
+        std::cout << "Wrong operator...\n";
+        break;
+
+    }
+    
+       
+
+    
+}

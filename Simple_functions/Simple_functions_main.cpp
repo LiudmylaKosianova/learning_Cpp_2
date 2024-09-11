@@ -37,9 +37,11 @@ int main()
     // else
     // std::cout << "Your number is not prime\n";
 
-    int n;
-    std::cin >> n;
-    std::cout << FactorialRe(n);
+    // int n;
+    // std::cin >> n;
+    // std::cout << FactorialRe(n);
+
+    SimpleCalculator();
 
 
     return 0;
