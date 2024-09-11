@@ -13,8 +13,20 @@ The function should take two integer pointers as parameters and swap the values 
 
 #include <iostream>
 
+void SwapTwo(int* a, int* b)
+{
+    *a = *(a)^*(b);
+    *b = *(b)^*(a);
+    *a = *(a)^*(b);
+}
+
 int main()
 {
 
+    int a = 0, b = 1;
+    int* ptra = &a;
+    int* ptrb = &b;
+    SwapTwo(ptra, ptrb);
+    std::cout << a << b << std::endl;
     return 0;
 }
