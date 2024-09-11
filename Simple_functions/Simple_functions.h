@@ -120,5 +120,7 @@ Practice: Writing recursive functions, understanding base and recursive cases, a
 
 int FactorialRe(int number)
 {
-    return 0;
+    if (number == 0) return 1;
+    else
+    return number * FactorialRe(number-1);
 }
