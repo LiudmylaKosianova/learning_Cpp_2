@@ -107,3 +107,18 @@ bool isPrime(int num)
     
     return true;
 }
+
+/*
+Recursive Factorial Function
+
+Task: Write a recursive function that calculates the factorial of a number. 
+The function should call itself with decremented values until it reaches 1. 
+Test the function in a program where the user inputs a number.
+
+Practice: Writing recursive functions, understanding base and recursive cases, and recursion flow.
+*/
+
+int FactorialRe(int number)
+{
+    return 0;
+}
