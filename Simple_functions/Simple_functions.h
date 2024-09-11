@@ -24,5 +24,13 @@ int FahrToCels(int fahr)
 
 void AskUser()
 {
+    std::cout << "\t\t======= Menu =======\n";
+    std::cout << "\t1. Convert Fahrenheit to Celsius\n\t2. Convert Celsius to Fahrenheit\n";
     
+    int operation = 0, userN;
+
+    std::cin >> operation;
+    std::cout << "Enter your number: ";
+    std::cin >> userN;
+
 }
