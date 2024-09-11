@@ -19,12 +19,19 @@ int main()
     int operation = 0, userN1, userN2, result;
     
 
-    do
+    while(true)
     {
         std::cout << "\t\t\t======= Menu =======\n";
         std::cout << "\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Exit\n\n";
         std::cout << "Operation to be performed: ";
         std::cin >> operation;
+
+        if(operation == 5)
+        {
+            std::cout << "You are exiting ... \n";
+            break;
+        } 
+
         std::cout << "First number: ";
         std::cin >> userN1;
         std::cout << "Second number: ";
@@ -33,9 +40,26 @@ int main()
         switch(operation)
         {
             case 1:
+            result = userN1 + userN2;
+            std::cout << "Result: " << result << std::endl;
+            break;
+            case 2:
+            result = userN1 - userN2;
+            std::cout << "Result: " << result << std::endl;
+            break;
+            case 3:
+            result = userN1 * userN2;
+            std::cout << "Result: " << result << std::endl;
+            break;
+            case 4:
+            result = userN1 / userN2;
+            std::cout << "Result: " << result << std::endl;
+            break;
+            default:
+            std::cout << "Please, choose the number from the menu\n";
 
         }
-    } while (operation != 5);
+    }
     
 
     return 0;
