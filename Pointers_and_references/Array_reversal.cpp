@@ -40,7 +40,5 @@ int main()
         std::cout << *(a + i) << " ";
     }
 
-
-
     return 0;
 }
