@@ -9,4 +9,9 @@ class SavingsAccount : public Account
 
     public:
     SavingsAccount(int accountNumber, double balance, double rate);
+    ~SavingsAccount();
+    
+    void applyInterest();
+    void withdraw(double amount)override;
+    void displayAccount()override;
 };
