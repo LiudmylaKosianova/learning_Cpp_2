@@ -8,6 +8,10 @@ class CheckingAccount : public Account
     int transactions;
 
     public:
-    
+    CheckingAccount(int accountNumber, double balance, int limit);
+    ~CheckingAccount();
+
+    void withdraw(double amount) override;
+    void displayAccount() override;
 };
 
