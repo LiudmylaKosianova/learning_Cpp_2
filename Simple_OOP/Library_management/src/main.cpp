@@ -10,7 +10,15 @@ int main()
     library[2] = new EBook("The Martian", "Andy Weir", "321-654-987", "EPUB");
     library[3] = new PrintedBook("Moby Dick", "Herman Melville", "456-789-123", 635);
 
-    
+    for(const auto& element : library) //display books
+    {
+        element -> displayBook();
+    }
+
+    for(auto& element : library)//delete books
+    {
+        delete element;
+    }
 
     return 0;
 }
