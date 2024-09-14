@@ -1,13 +1,15 @@
-#include "headers/Account.h"
-#include "headers/CheckingAccoung.h"
-#include "headers/SavingsAccount.h"
+#include "../headers/Account.h"
+#include "../headers/CheckingAccoung.h"
+#include "../headers/SavingsAccount.h"
 
 using std::cout;
 using std::endl;
 
 int main()
 {
-
+    // SavingsAccount* a = new SavingsAccount(1, 221000.45, 3.3);
+    // a->deposit(7.7);
+    // a->displayAccount();
     // Create accounts using polymorphism
     Account* accounts[2];
 
