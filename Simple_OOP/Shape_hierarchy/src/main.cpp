@@ -25,6 +25,9 @@ int main()
         delete shape;
     }
 
+    // Shape* a = new Rectangle(5.5, 3.4);
+    // delete a;
+
     return 0;
 }
 
