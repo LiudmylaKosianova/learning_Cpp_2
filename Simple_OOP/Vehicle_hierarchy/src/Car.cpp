@@ -10,6 +10,6 @@ Car::~Car()
 
 void Car::details()
 {
-    cout << "\tThe information about the car:\n";
+    cout << "\tInformation about the car:\n";
     Vehicle::details();
 }
