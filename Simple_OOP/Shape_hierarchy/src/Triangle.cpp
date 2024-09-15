@@ -1,7 +1,7 @@
 #include "../headers/Triangle.h"
 
 Triangle::Triangle(double sideA, double sideB, double sideC):
-sideA(sideA), sideB(sideC), sideC(sideC)
+sideA(sideA), sideB(sideB), sideC(sideC)
 {
     cout << "Triangle: " << sideA << "x" <<
     sideB << "x" << sideC << " created\n";
