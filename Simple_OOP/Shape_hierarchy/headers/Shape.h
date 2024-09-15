@@ -10,8 +10,8 @@ const double pi = 3.14159265358979323846;
 class Shape
 {
     public:
-    Shape();
-    ~Shape();
-    virtual void area();
+    Shape(){};
+    ~Shape(){};
+    virtual void area(){};
 
 };

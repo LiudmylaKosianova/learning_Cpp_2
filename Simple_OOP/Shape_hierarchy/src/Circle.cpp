@@ -2,7 +2,7 @@
 
 Circle::Circle(double radius) : radius(radius)
 {
-    cout << "Circle with radius: " << radius << " created\n";
+    cout << "Circle radius: " << radius << " created\n";
 }
 
 Circle::~Circle()
